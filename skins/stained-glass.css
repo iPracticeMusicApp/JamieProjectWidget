@@ -1,0 +1,86 @@
+/*
+  iPracticeMusic Widget Skin: Stained Glass
+  Deep jewel colors with a luminous multi-color border.
+*/
+
+:root {
+  color-scheme: dark;
+
+  --bg: #11131c;
+  --panel: #191d2a;
+  --text: #f7f4ff;
+  --muted: #bbb6cc;
+  --border: #4b4663;
+  --accent: #4aa3ff;
+  --danger: #ff7b8b;
+  --shadow: 0 22px 52px rgba(0, 0, 0, 0.5);
+
+  --skin-font: Arial, Helvetica, sans-serif;
+  --skin-header-bg: linear-gradient(135deg, #241a55, #0c4671 48%, #65205f);
+  --skin-header-text: #ffffff;
+  --skin-header-muted: #d8d2ef;
+  --skin-selector-bg: #202536;
+  --skin-control-bg: #252b3d;
+  --skin-control-text: #f7f4ff;
+  --skin-control-hover-border: #8c80b9;
+  --skin-focus-ring: rgba(91, 168, 255, 0.34);
+  --skin-accent-text: #07111f;
+  --skin-active-bg: #5b4717;
+  --skin-active-border: #e1b44a;
+  --skin-danger-bg: #54222b;
+  --skin-danger-border: #df7281;
+  --skin-media-card-bg: #202535;
+  --skin-media-header-bg: #292f43;
+  --skin-media-stage-bg: #070a10;
+  --skin-media-note: #d5d0e7;
+  --skin-empty-bg: #202433;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #292f43;
+  --skin-drop-border: #7a7297;
+  --skin-drop-bg: #20283a;
+  --skin-drop-hover-bg: #27344b;
+  --skin-drop-active-bg: #314566;
+  --skin-drop-ring: rgba(88, 166, 255, 0.23);
+  --skin-drop-inner: rgba(202, 126, 255, 0.2);
+  --skin-player-radius: 22px;
+  --skin-card-radius: 16px;
+  --skin-control-radius: 10px;
+  --skin-media-radius: 12px;
+  --skin-media-shadow: 0 10px 28px rgba(0, 0, 0, 0.34);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 15%, rgba(68, 99, 255, 0.15), transparent 26%),
+    radial-gradient(circle at 88% 12%, rgba(235, 67, 175, 0.14), transparent 26%),
+    #11131c;
+}
+
+.multitrack-player {
+  position: relative;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(var(--panel), var(--panel)) padding-box,
+    linear-gradient(
+      135deg,
+      #5aa8ff,
+      #794cff 24%,
+      #e244a7 48%,
+      #f5b544 72%,
+      #4cd39a
+    ) border-box;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.09),
+    0 0 34px rgba(114, 83, 255, 0.3),
+    0 22px 52px rgba(0, 0, 0, 0.5);
+}
+
+.multitrack-player::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 14px;
+  pointer-events: none;
+  z-index: 5;
+}

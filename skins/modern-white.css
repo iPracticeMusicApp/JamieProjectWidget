@@ -1,0 +1,197 @@
+/*
+  iPracticeMusic Widget Skin: Modern White
+
+  This file controls colors, typography, corners, shadows, and decorative
+  treatment. It does not contain playback or configuration logic.
+*/
+
+:root {
+  color-scheme: light;
+
+  --bg: #edf0f5;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #5e6978;
+  --border: #d7dce5;
+  --accent: #1010b0;
+  --danger: #b4232f;
+  --shadow: 0 8px 22px rgba(17, 24, 39, 0.11);
+
+  --skin-font: Arial, Helvetica, sans-serif;
+  --skin-header-bg: linear-gradient(135deg, #ffffff, #eef1f7);
+  --skin-header-text: #111827;
+  --skin-header-muted: #4b5563;
+  --skin-selector-bg: #f8f9fb;
+  --skin-control-bg: #ffffff;
+  --skin-control-text: #111827;
+  --skin-control-hover-border: #8f99aa;
+  --skin-focus-ring: rgba(16, 16, 176, 0.20);
+  --skin-accent-text: #ffffff;
+  --skin-active-bg: #fff4ca;
+  --skin-active-border: #c9a32d;
+  --skin-danger-bg: #ffe5e8;
+  --skin-danger-border: #d4606b;
+  --skin-media-card-bg: #ffffff;
+  --skin-media-header-bg: #f6f7fa;
+  --skin-media-stage-bg: #e7eaf0;
+  --skin-media-note: #3d4654;
+  --skin-empty-bg: #f7f8fa;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #f6f7fa;
+  --skin-drop-border: #a8b0bf;
+  --skin-drop-bg: #fafbfc;
+  --skin-drop-hover-bg: #f0f2ff;
+  --skin-drop-active-bg: #e3e5ff;
+  --skin-drop-ring: rgba(16, 16, 176, 0.14);
+  --skin-drop-inner: rgba(16, 16, 176, 0.18);
+  --skin-player-radius: 8px;
+  --skin-card-radius: 8px;
+  --skin-control-radius: 6px;
+  --skin-media-radius: 6px;
+  --skin-media-shadow: 0 4px 14px rgba(17, 24, 39, 0.06);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--skin-font);
+}
+
+.multitrack-player {
+  background: var(--panel);
+  border-color: var(--border);
+  border-radius: var(--skin-player-radius);
+  box-shadow: var(--shadow);
+}
+
+.player-header {
+  background: var(--skin-header-bg);
+  color: var(--skin-header-text);
+}
+
+.player-header p {
+  color: var(--skin-header-muted);
+  opacity: 1;
+}
+
+.song-selector {
+  background: var(--skin-selector-bg);
+  border-color: var(--border);
+}
+
+.song-selector select,
+button,
+.file-button,
+.download-link,
+.song-pdf-open {
+  background: var(--skin-control-bg);
+  color: var(--skin-control-text);
+  border-color: var(--border);
+  border-radius: var(--skin-control-radius);
+}
+
+.song-selector select:focus {
+  outline-color: var(--skin-focus-ring);
+  border-color: var(--accent);
+}
+
+button:hover,
+.file-button:hover,
+.download-link:hover,
+.song-pdf-open:hover,
+.song-pdf-open:focus-visible {
+  border-color: var(--skin-control-hover-border);
+}
+
+button.primary,
+.track .download-link,
+.track .download-link:hover,
+.track .download-link:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--skin-accent-text);
+}
+
+button.active {
+  background: var(--skin-active-bg);
+  border-color: var(--skin-active-border);
+}
+
+button.danger-active {
+  background: var(--skin-danger-bg);
+  border-color: var(--skin-danger-border);
+  color: var(--danger);
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+}
+
+.song-video-card {
+  background: var(--skin-media-card-bg);
+  border-color: var(--border);
+  border-radius: var(--skin-card-radius);
+  box-shadow: var(--skin-media-shadow);
+}
+
+.song-video-header {
+  background: var(--skin-media-header-bg);
+  border-color: var(--border);
+}
+
+.song-video-wrap {
+  background: var(--skin-media-stage-bg);
+}
+
+.song-video-player,
+.song-image-player {
+  border-radius: var(--skin-media-radius);
+}
+
+.song-video-note {
+  color: var(--skin-media-note);
+}
+
+.song-video-empty {
+  background: var(--skin-empty-bg);
+}
+
+.song-pdf-container {
+  background: var(--skin-pdf-bg);
+  border-color: var(--border);
+  border-radius: var(--skin-media-radius);
+}
+
+.song-pdf-toolbar {
+  background: var(--skin-pdf-toolbar-bg);
+  border-color: var(--border);
+}
+
+.song-pdf-frame {
+  background: var(--skin-pdf-bg);
+}
+
+.local-audio-drop-zone {
+  border-color: var(--skin-drop-border);
+  background: var(--skin-drop-bg);
+}
+
+.local-audio-drop-zone:hover,
+.local-audio-drop-zone:focus-within {
+  border-color: var(--accent);
+  background: var(--skin-drop-hover-bg);
+}
+
+.local-audio-drop-zone.drag-over {
+  border-color: var(--accent);
+  background: var(--skin-drop-active-bg);
+  box-shadow:
+    0 0 0 4px var(--skin-drop-ring),
+    inset 0 0 0 1px var(--skin-drop-inner);
+}
+
+
+.player-header {
+  border-bottom: 1px solid var(--border);
+}
+

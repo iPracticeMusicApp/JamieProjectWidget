@@ -1,0 +1,70 @@
+/*
+  iPracticeMusic Widget Skin: Celtic Green
+  Forest tones with layered gold-and-green framing.
+*/
+
+:root {
+  color-scheme: light;
+
+  --bg: #edf4ed;
+  --panel: #fffef8;
+  --text: #203126;
+  --muted: #637268;
+  --border: #cfdacb;
+  --accent: #2d7047;
+  --danger: #a52f36;
+  --shadow: 0 18px 42px rgba(31, 76, 48, 0.2);
+
+  --skin-font: Georgia, "Times New Roman", serif;
+  --skin-header-bg: linear-gradient(135deg, #1a4a31, #317552);
+  --skin-header-text: #fffdf1;
+  --skin-header-muted: #dbe9dd;
+  --skin-selector-bg: #f3f8f2;
+  --skin-control-bg: #fffef9;
+  --skin-control-text: #203126;
+  --skin-control-hover-border: #8ca18f;
+  --skin-focus-ring: rgba(45, 112, 71, 0.22);
+  --skin-accent-text: #ffffff;
+  --skin-active-bg: #f3e5ae;
+  --skin-active-border: #b39432;
+  --skin-danger-bg: #f8e0e2;
+  --skin-danger-border: #c5686e;
+  --skin-media-card-bg: #fffef9;
+  --skin-media-header-bg: #eff6ef;
+  --skin-media-stage-bg: #132219;
+  --skin-media-note: #dce9de;
+  --skin-empty-bg: #f3f8f3;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #eff6ef;
+  --skin-drop-border: #91aa96;
+  --skin-drop-bg: #f7fbf6;
+  --skin-drop-hover-bg: #ebf5ec;
+  --skin-drop-active-bg: #dcecdf;
+  --skin-drop-ring: rgba(45, 112, 71, 0.16);
+  --skin-drop-inner: rgba(45, 112, 71, 0.19);
+  --skin-player-radius: 18px;
+  --skin-card-radius: 14px;
+  --skin-control-radius: 8px;
+  --skin-media-radius: 10px;
+  --skin-media-shadow: 0 7px 22px rgba(31, 76, 48, 0.09);
+}
+
+.multitrack-player {
+  position: relative;
+  border: 5px solid #2d7047;
+  outline: 3px double #b99a43;
+  outline-offset: -12px;
+  box-shadow:
+    0 0 0 2px #d8c58c,
+    0 18px 42px rgba(31, 76, 48, 0.2);
+}
+
+.multitrack-player::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px dashed rgba(45, 112, 71, 0.48);
+  border-radius: 9px;
+  pointer-events: none;
+  z-index: 5;
+}

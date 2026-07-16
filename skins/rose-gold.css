@@ -1,0 +1,78 @@
+/*
+  iPracticeMusic Widget Skin: Rose Gold
+  Soft neutral palette with metallic rose-gold edge treatment.
+*/
+
+:root {
+  color-scheme: light;
+
+  --bg: #f7f1f0;
+  --panel: #fffdfc;
+  --text: #3b2e2d;
+  --muted: #7c6b69;
+  --border: #e2d2cf;
+  --accent: #a45f63;
+  --danger: #a72f3e;
+  --shadow: 0 18px 40px rgba(92, 56, 54, 0.18);
+
+  --skin-font: Arial, Helvetica, sans-serif;
+  --skin-header-bg: linear-gradient(135deg, #8d4e54, #bd7d7c);
+  --skin-header-text: #fffafa;
+  --skin-header-muted: #f0dddd;
+  --skin-selector-bg: #fbf6f5;
+  --skin-control-bg: #ffffff;
+  --skin-control-text: #3b2e2d;
+  --skin-control-hover-border: #b98e8a;
+  --skin-focus-ring: rgba(164, 95, 99, 0.22);
+  --skin-accent-text: #ffffff;
+  --skin-active-bg: #f6e6bd;
+  --skin-active-border: #b99944;
+  --skin-danger-bg: #f8e2e5;
+  --skin-danger-border: #c96a76;
+  --skin-media-card-bg: #ffffff;
+  --skin-media-header-bg: #f9f0ef;
+  --skin-media-stage-bg: #2a2020;
+  --skin-media-note: #f1e4e2;
+  --skin-empty-bg: #faf4f3;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #f9f0ef;
+  --skin-drop-border: #bfa19e;
+  --skin-drop-bg: #fcf8f7;
+  --skin-drop-hover-bg: #f7ecea;
+  --skin-drop-active-bg: #f0ddda;
+  --skin-drop-ring: rgba(164, 95, 99, 0.16);
+  --skin-drop-inner: rgba(164, 95, 99, 0.18);
+  --skin-player-radius: 24px;
+  --skin-card-radius: 18px;
+  --skin-control-radius: 12px;
+  --skin-media-radius: 14px;
+  --skin-media-shadow: 0 8px 22px rgba(92, 56, 54, 0.09);
+}
+
+.multitrack-player {
+  position: relative;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(var(--panel), var(--panel)) padding-box,
+    linear-gradient(
+      135deg,
+      #c88d88,
+      #f1cbc2 28%,
+      #a96e6d 52%,
+      #f4ddd6 76%,
+      #b97975
+    ) border-box;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.8),
+    0 18px 40px rgba(92, 56, 54, 0.18);
+}
+
+.multitrack-player::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(160, 93, 94, 0.28);
+  border-radius: 15px;
+  pointer-events: none;
+  z-index: 5;
+}

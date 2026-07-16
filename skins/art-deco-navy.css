@@ -1,0 +1,84 @@
+/*
+  iPracticeMusic Widget Skin: Art Deco Navy
+  Geometric gold border and crisp architectural styling.
+*/
+
+:root {
+  color-scheme: dark;
+
+  --bg: #09111c;
+  --panel: #101b29;
+  --text: #f5f1e7;
+  --muted: #b8b2a8;
+  --border: #314357;
+  --accent: #d8ad4f;
+  --danger: #ff817d;
+  --shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+
+  --skin-font: "Trebuchet MS", Arial, sans-serif;
+  --skin-header-bg: linear-gradient(135deg, #0c2037, #153a5d);
+  --skin-header-text: #fff7df;
+  --skin-header-muted: #d8c8a5;
+  --skin-selector-bg: #142334;
+  --skin-control-bg: #17283a;
+  --skin-control-text: #f7f0df;
+  --skin-control-hover-border: #c9a24d;
+  --skin-focus-ring: rgba(216, 173, 79, 0.3);
+  --skin-accent-text: #16202d;
+  --skin-active-bg: #5b491d;
+  --skin-active-border: #e0bc62;
+  --skin-danger-bg: #542725;
+  --skin-danger-border: #d36d67;
+  --skin-media-card-bg: #132131;
+  --skin-media-header-bg: #192b3f;
+  --skin-media-stage-bg: #05090e;
+  --skin-media-note: #d8d0bf;
+  --skin-empty-bg: #12202f;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #192b3f;
+  --skin-drop-border: #83704a;
+  --skin-drop-bg: #152435;
+  --skin-drop-hover-bg: #1b3046;
+  --skin-drop-active-bg: #25405d;
+  --skin-drop-ring: rgba(216, 173, 79, 0.18);
+  --skin-drop-inner: rgba(216, 173, 79, 0.22);
+  --skin-player-radius: 8px;
+  --skin-card-radius: 6px;
+  --skin-control-radius: 4px;
+  --skin-media-radius: 4px;
+  --skin-media-shadow: 0 7px 20px rgba(0, 0, 0, 0.28);
+}
+
+.multitrack-player {
+  position: relative;
+  border: 4px solid #d8ad4f;
+  outline: 1px solid #73603b;
+  outline-offset: -10px;
+  clip-path: polygon(
+    14px 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    14px 100%,
+    0 calc(100% - 14px),
+    0 14px
+  );
+  box-shadow:
+    0 0 0 2px #1e2d3f,
+    0 18px 48px rgba(0, 0, 0, 0.5);
+}
+
+.multitrack-player::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border: 1px solid rgba(216, 173, 79, 0.62);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.player-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

@@ -1,0 +1,80 @@
+/*
+  iPracticeMusic Widget Skin: Cathedral Gold
+  Decorative double-frame border with a warm liturgical palette.
+*/
+
+:root {
+  color-scheme: light;
+
+  --bg: #f5efe4;
+  --panel: #fffdf7;
+  --text: #33271b;
+  --muted: #766554;
+  --border: #c9ad73;
+  --accent: #7f2d2d;
+  --danger: #a12626;
+  --shadow: 0 18px 42px rgba(77, 48, 21, 0.24);
+
+  --skin-font: Georgia, "Times New Roman", serif;
+  --skin-header-bg: linear-gradient(135deg, #5d1f24, #8d3438);
+  --skin-header-text: #fff9ea;
+  --skin-header-muted: #ead8bd;
+  --skin-selector-bg: #fbf3e5;
+  --skin-control-bg: #fffdf8;
+  --skin-control-text: #33271b;
+  --skin-control-hover-border: #a37d39;
+  --skin-focus-ring: rgba(128, 86, 29, 0.25);
+  --skin-accent-text: #ffffff;
+  --skin-active-bg: #f5e5af;
+  --skin-active-border: #b3892d;
+  --skin-danger-bg: #f9dede;
+  --skin-danger-border: #bf6666;
+  --skin-media-card-bg: #fffdf8;
+  --skin-media-header-bg: #f8eedc;
+  --skin-media-stage-bg: #241b15;
+  --skin-media-note: #f1e2cb;
+  --skin-empty-bg: #fbf4e9;
+  --skin-pdf-bg: #ffffff;
+  --skin-pdf-toolbar-bg: #f8eedc;
+  --skin-drop-border: #b79b67;
+  --skin-drop-bg: #fffaf0;
+  --skin-drop-hover-bg: #f9efd9;
+  --skin-drop-active-bg: #f3e1bc;
+  --skin-drop-ring: rgba(143, 102, 39, 0.17);
+  --skin-drop-inner: rgba(143, 102, 39, 0.2);
+  --skin-player-radius: 18px;
+  --skin-card-radius: 14px;
+  --skin-control-radius: 8px;
+  --skin-media-radius: 10px;
+  --skin-media-shadow: 0 7px 22px rgba(77, 48, 21, 0.1);
+}
+
+body {
+  background:
+    radial-gradient(circle at top, #fff8e8 0, transparent 42%),
+    var(--bg);
+}
+
+.multitrack-player {
+  position: relative;
+  border: 5px solid #b58b38;
+  outline: 2px solid #f6e1a6;
+  outline-offset: -10px;
+  box-shadow:
+    0 0 0 2px #6f4b1e,
+    0 18px 42px rgba(77, 48, 21, 0.24);
+}
+
+.multitrack-player::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(139, 96, 31, 0.42);
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.player-header h1 {
+  letter-spacing: 0.025em;
+}
